@@ -3,54 +3,10 @@
 	https://static.lens.org/lens/9.5.1/embed.min.css
 */
 
-.lens-ui-widget
-{
-	font-family: source_sans_3_regular, sans-serif;
-	line-height: 1.333333;
-	font-size: 1rem;
+.lens-ui-widget {
+	font-family: sans-serif !important;
+	font-size: 1em;
 	line-height: 1.425;
-}
-
-@font-face {
-	font-family: source_sans_3_light;
-	src: local("SourceSansPro-Light"), local("source-sans-pro.light"), local("source_sans_prolight"), url("fonts/source-sans/SourceSansPro-Light.woff2") format("woff2"), url("fonts/source-sans/SourceSansPro-Light.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: source_sans_3_regular;
-	src: local("SourceSans3-Regular"), local("source-sans-3.regular"), local("source_sans_3_regular"), url("fonts/source-sans/SourceSans3-Regular.woff2") format("woff2"), url("fonts/source-sans/SourceSans3-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: source_sans_3_semibold;
-	src: local("SourceSans3-Semibold"), local("source-sans-3.semibold"), local("source_sans_3_semibold"), url("fonts/source-sans/SourceSans3-Semibold.woff2") format("woff2"), url("fonts/source-sans/SourceSans3-Semibold.woff") format("woff");
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: source_sans_3_italic;
-	src: url("fonts/source-sans/SourceSans3-It.woff2") format("woff2"), url("fonts/source-sans/SourceSans3-It.woff") format("woff");
-	font-weight: 400;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: source_sans_3_light_italic;
-	src: url("fonts/source-sans/SourceSans3-LightIt.woff2") format("woff2"), url("fonts/source-sans/SourceSans3-LightIt.woff") format("woff");
-	font-weight: 300;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: source_sans_3_semibold_italic;
-	src: url("fonts/source-sans/SourceSans3-SemiboldIt.woff2") format("woff2"), url("fonts/source-sans/SourceSans3-SemiboldIt.woff") format("woff");
-	font-weight: 600;
-	font-style: italic;
 }
 
 [class*=lens-search-widget] {
@@ -62,7 +18,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 10px;
-	font-family: sans-serif;
+	font-family: sans-serif !important;
 	font-size: 1em;
 	position: relative;
 	margin: 0;
@@ -75,6 +31,7 @@
 	background-size: 116px 19px;
 	background-repeat: no-repeat;
 	padding-top: 5px;
+	padding-bottom: 3px;
 	min-height: 20px;
 	margin-bottom: 5px;
 	position: relative;
@@ -86,6 +43,16 @@
 	transition: all .15s ease-in-out;
 }
 
+[class*=lens-search-widget] a:hover {
+	text-decoration: none;
+	outline: 0;
+}
+
+[class*=lens-search-widget] input {
+	margin: 0;
+	overflow: visible;
+}
+
 [class*=lens-search-widget] input[type=text] {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -95,6 +62,7 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0 .75em;
+	font-family: sans-serif !important;
 	font-size: 15px;
 	width: 100%;
 	line-height: 36px;
@@ -107,6 +75,8 @@
 }
 
 [class*=lens-search-widget] button {
+	margin: 0;
+	overflow: visible;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	-ms-border-radius: 2px;
@@ -129,7 +99,8 @@
 	display: block;
 	border: none;
 	right: 13px;
-	top: 43px;
+	top: 43px; 
+	line-height: 1.15;
 }
 
 [class*=lens-search-widget] button svg {
@@ -146,12 +117,12 @@
 }
 
 .lens-search-widget-1 a {
-	background-image: url("img/logo-lens-invert@2x.png");
-	color: #bac5d1;
+	background-image: url("../img/logo-lens-invert@2x.png");
+	color: #bac5d1 !important;
 }
 
 .lens-search-widget-1 a:hover {
-	color: #076fcb;
+	color: #076fcb !important;
 }
 
 .lens-search-widget-1 input[type=text] {
@@ -174,12 +145,12 @@
 }
 
 .lens-search-widget-2 a {
-	background-image: url("img/logo-lens@2x.png");
-	color: #778490;
+	background-image: url("../img/logo-lens@2x.png");
+	color: #778490 !important;
 }
 
 .lens-search-widget-2 a:hover {
-	color: #076fcb;
+	color: #076fcb !important;
 }
 
 .lens-search-widget-2 input[type=text] {

@@ -10,7 +10,7 @@
   * @wordpress-plugin
   * Plugin Name:       COVERSE Lens search
   * Description:       Wordpress shortcode to add a custom Lens search feature on the COVERSE website.
-  * Version:           1.0.0
+  * Version:           1.0.5
   * Requires at least: 6.0
   * Requires PHP:      7.0
   * Author:            Rado Faletič
@@ -30,7 +30,7 @@
   */
 
 if (!function_exists('RadoFaletic_com_check_for_updates')) {
-  function coverse_lens_search_check_for_updates($update, $plugin_data, $plugin_file) {
+  function RadoFaletic_com_check_for_updates($update, $plugin_data, $plugin_file) {
     static $response = false;
     if (empty($plugin_data['UpdateURI']) || !empty($update)) {
       return $update;
@@ -53,7 +53,7 @@ if (!function_exists('RadoFaletic_com_check_for_updates')) {
 
 function coverse_lens_search() {
   
-  wp_enqueue_style('coverse-lens-search-style', plugins_url('/css/lens.embed.css', __FILE__), null, false);pp
+  wp_enqueue_style('coverse-lens-search-style', plugins_url('/css/lens.embed.css', __FILE__), null, false);
   
   global $wp_filesystem;
   require_once(ABSPATH . '/wp-admin/includes/file.php');
