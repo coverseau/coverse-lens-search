@@ -10,7 +10,7 @@
   * @wordpress-plugin
   * Plugin Name:       COVERSE Lens search
   * Description:       Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
-  * Version:           1.1.4
+  * Version:           1.1.3
   * Requires at least: 6.0
   * Requires PHP:      7.0
   * Author:            Rado Faletič
@@ -18,7 +18,7 @@
   * Text Domain:       COVERSE Lens search
   * License:           GPL v2 or later
   * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
-  * Update URI:        https://raw.githubusercontent.com/coverseau/profile-lens-search/refs/heads/main/update-info.json
+  * Update URI:        https://raw.githubusercontent.com/coverseau/coverse-lens-search/refs/heads/main/update-info.json
   */
 
 /*

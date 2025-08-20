@@ -14,8 +14,6 @@ Wordpress shortcode to add a custom Lens search feature based on COVERSE’s cus
 Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
 
 == Changelog ==
-= 1.1.4 =
-* Removed attribution shortcode, and added instructions for use.
 = 1.1.3 =
 * Changed update method to GitHub repository.
 = 1.1.2 =
