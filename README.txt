@@ -7,13 +7,15 @@ Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research.
+Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
 
 == Description ==
 
-Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research.
+Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
 
 == Changelog ==
+= 1.1.4 =
+* Removed attribution shortcode, and added instructions for use.
 = 1.1.3 =
 * Changed update method to GitHub repository.
 = 1.1.2 =

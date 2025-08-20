@@ -9,8 +9,8 @@
   *
   * @wordpress-plugin
   * Plugin Name:       COVERSE Lens search
-  * Description:       Wordpress shortcode to add a custom Lens search feature on the COVERSE website.
-  * Version:           1.1.3
+  * Description:       Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
+  * Version:           1.1.4
   * Requires at least: 6.0
   * Requires PHP:      7.0
   * Author:            Rado Faletič
@@ -70,29 +70,8 @@ if (!function_exists('coverse_lens_search_check_for_plugin_update')) {
   add_filter('pre_set_coverse_lens_search_transient_update_plugins', 'coverse_lens_search_check_for_plugin_update');
 }
 
-if (!function_exists('RadoFaletic_com_check_for_updates')) {
-  function RadoFaletic_com_check_for_updates($update, $plugin_data, $plugin_file) {
-    static $response = false;
-    if (empty($plugin_data['UpdateURI']) || !empty($update)) {
-      return $update;
-    }
-    if ($response === false) {
-      $response = wp_remote_get($plugin_data['UpdateURI']);
-    }
-    if (empty($response['body'])) {
-      return $update;
-    }
-    $custom_plugins_data = json_decode($response['body'], true);
-    if (!empty($custom_plugins_data[$plugin_file])) {
-      return $custom_plugins_data[$plugin_file];
-    } else {
-      return $update;
-    }
-  }
-  add_filter('update_plugins_RadoFaletic.com', 'RadoFaletic_com_check_for_updates', 10, 3);
-}
-
 function coverse_lens_search() {
+  wp_enqueue_style('coverse-lens-attribution-style', plugins_url('/css/lens.attribution.css', __FILE__), null, false);
   wp_enqueue_style('coverse-lens-search-style', plugins_url('/css/lens.embed.css', __FILE__), null, false);
   
   global $wp_filesystem;
@@ -108,21 +87,3 @@ function coverse_lens_search() {
   return $content;
 }
 add_shortcode('coverse-lens-search', 'coverse_lens_search');
-
-
-function coverse_lens_attribution() {
-  wp_enqueue_style('coverse-lens-attribution-style', plugins_url('/css/lens.attribution.css', __FILE__), null, false);
-  
-  global $wp_filesystem;
-  require_once(ABSPATH . '/wp-admin/includes/file.php');
-  WP_Filesystem();
-  $htmlTemplateFile = plugin_dir_path( __FILE__ ) . 'coverse-lens-attribution.html';
-  
-  $content = '';
-  if ($wp_filesystem->exists($htmlTemplateFile)) {
-      $content = $wp_filesystem->get_contents($htmlTemplateFile);
-  }
-  
-  return $content;
-}
-add_shortcode('coverse-lens-attribution', 'coverse_lens_attribution');
