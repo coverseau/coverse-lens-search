@@ -56,5 +56,6 @@ ehthumbs.db
 
 # other items
 .nova/
+*.xcworkspace
 coverse-lens-search.zip
 
