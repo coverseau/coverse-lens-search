@@ -1,24 +1,10 @@
-/*
-	Based off Lens 9.5.1
-	https://static.lens.org/lens/9.5.1/embed.min.css
-*/
-
-.lens-ui-widget {
-	font-family: sans-serif !important;
-	font-size: 1em;
-	line-height: 1.425;
-}
+/* based off https://static.lens.org/lens/9.7.9/embed.min.css */
 
 [class*=lens-search-widget] {
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
 	border-radius: 2px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 10px;
-	font-family: sans-serif !important;
+	font-family: sans-serif;
 	font-size: 1em;
 	position: relative;
 	margin: 0;
@@ -31,16 +17,12 @@
 	background-size: 116px 19px;
 	background-repeat: no-repeat;
 	padding-top: 5px;
-	padding-bottom: 3px;
+	/*padding-bottom: 3px;*/
 	min-height: 20px;
 	margin-bottom: 5px;
 	position: relative;
 	text-decoration: none;
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
-	transition: all .15s ease-in-out;
+	transition: .15s;
 }
 
 [class*=lens-search-widget] a:hover {
@@ -54,15 +36,9 @@
 }
 
 [class*=lens-search-widget] input[type=text] {
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
 	border-radius: 2px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0 .75em;
-	font-family: sans-serif !important;
 	font-size: 15px;
 	width: 100%;
 	line-height: 36px;
@@ -75,14 +51,7 @@
 }
 
 [class*=lens-search-widget] button {
-	margin: 0;
-	overflow: visible;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
 	border-radius: 2px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0 .5em;
 	min-height: 32px;
@@ -91,16 +60,11 @@
 	max-width: 70px;
 	cursor: pointer;
 	line-height: 32px;
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
-	transition: all .15s ease-in-out;
+	transition: .15s;
 	display: block;
 	border: none;
 	right: 13px;
-	top: 43px; 
-	line-height: 1.15;
+	top: 43px;
 }
 
 [class*=lens-search-widget] button svg {
@@ -136,33 +100,5 @@
 }
 
 .lens-search-widget-1 button:hover {
-	background: #004767;
-}
-
-.lens-search-widget-2 {
-	border: 1px solid #35495c;
-	background: #35495c;
-}
-
-.lens-search-widget-2 a {
-	background-image: url("../img/logo-lens@2x.png");
-	color: #778490 !important;
-}
-
-.lens-search-widget-2 a:hover {
-	color: #076fcb !important;
-}
-
-.lens-search-widget-2 input[type=text] {
-	border: 1px solid #35495c;
-	background: #000;
-	color: #fff;
-}
-
-.lens-search-widget-2 button {
-	background: #076fcb;
-}
-
-.lens-search-widget-2 button:hover {
 	background: #004767;
 }
