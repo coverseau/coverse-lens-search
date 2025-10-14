@@ -3,7 +3,7 @@ Contributors: Rado Faletič
 Tags: COVERSE, Lens
 Requires at least: 6.2
 Tested up to: 6.2
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,8 @@ Wordpress shortcode to add a custom Lens search feature based on COVERSE’s cur
 Wordpress shortcode to add a custom Lens search feature based on COVERSE’s curated database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
 
 == Changelog ==
+= 1.2.1 =
+* Fixed <iframe> styling omission.
 = 1.2.0 =
 * Refresh to update to Lens 9.7.9, and use <iframe> elements to bypass html display quirk.
 = 1.1.8 =
