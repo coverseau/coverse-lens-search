@@ -10,7 +10,7 @@
  * @wordpress-plugin
  * Plugin Name:       COVERSE Lens search
  * Description:       Wordpress shortcode to add a custom Lens search feature based on COVERSE’s custom database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
- * Version:           1.2.3
+ * Version:           1.2.4
  * Requires at least: 6.0
  * Requires PHP:      7.0
  * Author:            Rado Faletič
@@ -78,7 +78,7 @@ function coverse_lens_search() {
 	
 	$content .= '<p>There is an ever-expanding body of published science addressing serious side-effects of the COVID-19 vaccines.</p>';
 	$content .= '<p><a href="https://coverse.org.au"><strong>CO</strong>VERSE</a> has made this research public via a curated collected at <a href="https://www.lens.org/lens/search/scholar/list?collectionId=232079">The Lens</a>, an online platform that makes access to article details possible via collaborations with the major open access scholarly and open data initiatives, including the global public resource of PubMed.</p>';
-	$content .= '<p>Use the search feature below to explore this collection, which currently numbers over 4,300 papers.</p>';
+	$content .= '<p>Use the search feature below to explore this collection, which currently numbers over 4,400 papers.</p>';
 	$content .= '<search id="lens-ui-widget" style="border: 0; margin: 0; margin-bottom: var(--wp--preset--spacing--70);">';
 	$content .= '<iframe src="' . plugins_url('/lens.html', __FILE__) . '" height="100px" width="100%" style="border: none; overflow: visible;"></iframe>';
 	$content .= '<p class="has-small-font-size"><em>Note:</em> Upon first use this search function sometimes opens the wrong page without showing any search results. In this case simply come back to this page and try again.</p>';
