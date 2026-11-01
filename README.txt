@@ -4,7 +4,7 @@ Donate link: https://coverse.org.au/donate/
 Tags: COVERSE, Lens
 Requires at least: 6.2
 Tested up to: 7.1
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,8 @@ Wordpress shortcode to add a custom Lens search feature based on COVERSE’s cur
 Wordpress shortcode to add a custom Lens search feature based on COVERSE’s curated database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
 
 == Changelog ==
+= 1.2.8 =
+* Updated to The Lens 9.10.3 and updated number of papers to 4,700.
 = 1.2.7 =
 * Updated to The Lens 9.9.2 and swapped CrossRef reference to DOI.
 = 1.2.6 =

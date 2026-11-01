@@ -10,7 +10,7 @@
  * @wordpress-plugin
  * Plugin Name:       COVERSE Lens search
  * Description:       Wordpress shortcode to add a custom Lens search feature based on COVERSE’s curated database of COVID-19 vaccine adverse event research. To add this search feature to your own Wordpress website, add the following shortcode: [coverse-lens-search]
- * Version:           1.2.7
+ * Version:           1.2.8
  * Requires at least: 6.2
  * Requires PHP:      7.0
  * Author:            Rado Faletič
@@ -81,13 +81,13 @@ function coverse_lens_search() {
 	
 	$content .= '<p>There is an ever-expanding body of published science addressing serious side-effects of the COVID-19 vaccines.</p>';
 	$content .= '<p><a href="https://coverse.org.au"><strong>CO</strong>VERSE</a> has made this research public via a curated collected at <a href="https://www.lens.org/lens/search/scholar/list?collectionId=232079">The Lens</a>, an online platform that makes access to article details possible via collaborations with the major open access scholarly and open data initiatives, including the global public resource of PubMed.</p>';
-	$content .= '<p>Use the search feature below to explore this collection, which currently numbers over 4,600 papers.</p>';
+	$content .= '<p>Use the search feature below to explore this collection, which currently numbers over 4,700 papers.</p>';
 	$content .= '<search id="lens-ui-widget" style="border: 0; margin: 0; margin-bottom: var(--wp--preset--spacing--70);">';
 	$content .= '<iframe src="' . plugins_url('/lens.html', __FILE__) . '?ver=' . $plugin_version . '" height="100px" width="100%" style="border: none; overflow: visible;"></iframe>';
 	$content .= '<p class="has-small-font-size"><em>Note:</em> Upon first use this search function sometimes opens the wrong page without showing any search results. In this case simply come back to this page and try again.</p>';
 	$content .= '</search>';
 	$content .= '<p>If you know of relevant scientific articles that do not appear in this collection please <a href="mailto:science@coverse.org.au">let us know via email</a>.</p>';
-	$content .= '<p>Thank you to our international network of volunteers for making this work possible and accessible.</p>';
+	$content .= '<p>Thank you to our international network of collaborators and volunteers for making this work possible and accessible.</p>';
 	$content .= '<h2 class="wp-block-heading">Search instructions</h2>';
 	$content .= '<p>When you see the <img alt="PubMed Central" src="' . plugins_url('/img/icon-pub-med-central.png', __FILE__) . '" style="display: inline-block; height: 1em;"> icon in the search results you can click on it to read the full article for free. Or click on the <img alt="doi" src="' . plugins_url('/img/icon-doi.png', __FILE__) . '" style="display: inline-block; height: 1em;"> icon to go to the article on the publisher’s website.</p>';
 	$content .= '<p>Search via The Lens utilises standard search syntax. Some of the basic operators are:</p>';
